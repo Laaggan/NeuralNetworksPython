@@ -18,11 +18,11 @@ class SimpleDataset:
 
         x1 = np.random.normal(mu1, sigma1, n)
         x2 = np.random.normal(mu2, sigma2, n)
-        self.x = np.concatenate([x1, x2])
+        self.x1 = np.concatenate([x1, x2])
 
         y1 = np.random.normal(mu1, sigma1, n)
         y2 = np.random.normal(mu2, sigma2, n)
-        self.y = np.concatenate([y1, y2])
+        self.x2 = np.concatenate([y1, y2])
 
 #FIXME: return a data frame instead of an object as in "class SimleDataset"
 '''
@@ -56,10 +56,12 @@ def CreateDataFrame(numberOfPoints=100):
     #data1 = np.r_[colNames, data1]
 
     return data1
-
 '''
 
+'''
+#Some lines of code to test the class
 data = SimpleDataset(100)
 
-plt.scatter(data.x, data.y)
+plt.scatter(data.x1, data.x2)
 plt.show()
+'''
