@@ -1,3 +1,6 @@
+#Rename github repo from something more generic which covers the general data science part
+#https://stackoverflow.com/questions/5751585/how-do-i-rename-a-repository-on-github
+
 import numpy as np
 import matplotlib.pyplot as plt
 from NeuralNet import *
